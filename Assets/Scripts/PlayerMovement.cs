@@ -22,11 +22,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player != null)
+        if (player != null) //Player null check
         {
             
             if (Input.GetMouseButtonDown(0)) {
-               direction = (move.transform.position - player.transform.position).normalized;   
+               direction = (move.transform.position - player.transform.position).normalized;   //Finds the distance vector
                
 
             }
